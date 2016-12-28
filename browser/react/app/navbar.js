@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div className="container">
@@ -11,18 +11,18 @@ const NavBar = () => {
                     <span className="icon-bar"></span>
                     <span className="icon-bar"></span>
                 </button>
-                <a className="navbar-brand" href="#">Harlem Launch Association</a>
+                <a className="navbar-brand" onClick={props.handleClickCover}>Harlem Launch Association</a>
             </div>
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul className="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="#" onClick={props.handleClickAbout}>About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a onClick={props.handleClickProjects}>Projects</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#" onClick={props.handleClickTeam}>Teams</a>
                     </li>
                 </ul>
             </div>

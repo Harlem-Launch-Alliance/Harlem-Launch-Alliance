@@ -21489,6 +21489,8 @@
 	  value: true
 	});
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -21505,19 +21507,88 @@
 	
 	var _cover2 = _interopRequireDefault(_cover);
 	
+	var _projects = __webpack_require__(182);
+	
+	var _projects2 = _interopRequireDefault(_projects);
+	
+	var _team = __webpack_require__(183);
+	
+	var _team2 = _interopRequireDefault(_team);
+	
+	var _about = __webpack_require__(184);
+	
+	var _about2 = _interopRequireDefault(_about);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var App = function App(_ref) {
-	  var children = _ref.children;
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(_navbar2.default, null),
-	    _react2.default.createElement(_cover2.default, null),
-	    _react2.default.createElement(_footer2.default, null)
-	  );
-	};
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var App = function (_Component) {
+	  _inherits(App, _Component);
+	
+	  function App() {
+	    _classCallCheck(this, App);
+	
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+	
+	    _this.state = {
+	      currentPage: 'Cover'
+	    };
+	
+	    _this.handleClickCover = _this.handleClickCover.bind(_this);
+	    _this.handleClickProjects = _this.handleClickProjects.bind(_this);
+	    _this.handleClickAbout = _this.handleClickAbout.bind(_this);
+	    _this.handleClickTeam = _this.handleClickTeam.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(App, [{
+	    key: 'handleClickCover',
+	    value: function handleClickCover() {
+	      this.setState({ currentPage: 'Cover' });
+	    }
+	  }, {
+	    key: 'handleClickProjects',
+	    value: function handleClickProjects() {
+	      this.setState({ currentPage: 'Projects' });
+	    }
+	  }, {
+	    key: 'handleClickAbout',
+	    value: function handleClickAbout() {
+	      this.setState({ currentPage: 'About' });
+	    }
+	  }, {
+	    key: 'handleClickTeam',
+	    value: function handleClickTeam() {
+	      this.setState({ currentPage: 'Team' });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(_navbar2.default, {
+	          handleClickTeam: this.handleClickTeam,
+	          handleClickAbout: this.handleClickAbout,
+	          handleClickProjects: this.handleClickProjects,
+	          handleClickCover: this.handleClickCover
+	        }),
+	        this.state.currentPage === 'Cover' ? _react2.default.createElement(_cover2.default, null) : null,
+	        this.state.currentPage === 'Projects' ? _react2.default.createElement(_projects2.default, null) : null,
+	        this.state.currentPage === 'About' ? _react2.default.createElement(_about2.default, null) : null,
+	        this.state.currentPage === 'Team' ? _react2.default.createElement(_team2.default, null) : null,
+	        _react2.default.createElement(_footer2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return App;
+	}(_react.Component);
 	
 	exports.default = App;
 
@@ -21537,7 +21608,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var NavBar = function NavBar() {
+	var NavBar = function NavBar(props) {
 	    return _react2.default.createElement(
 	        "nav",
 	        { className: "navbar navbar-inverse navbar-fixed-top", role: "navigation" },
@@ -21561,7 +21632,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    "a",
-	                    { className: "navbar-brand", href: "#" },
+	                    { className: "navbar-brand", onClick: props.handleClickCover },
 	                    "Harlem Launch Association"
 	                )
 	            ),
@@ -21576,7 +21647,7 @@
 	                        null,
 	                        _react2.default.createElement(
 	                            "a",
-	                            { href: "#" },
+	                            { href: "#", onClick: props.handleClickAbout },
 	                            "About"
 	                        )
 	                    ),
@@ -21585,8 +21656,8 @@
 	                        null,
 	                        _react2.default.createElement(
 	                            "a",
-	                            { href: "#" },
-	                            "Services"
+	                            { onClick: props.handleClickProjects },
+	                            "Projects"
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -21594,8 +21665,8 @@
 	                        null,
 	                        _react2.default.createElement(
 	                            "a",
-	                            { href: "#" },
-	                            "Contact"
+	                            { href: "#", onClick: props.handleClickTeam },
+	                            "Teams"
 	                        )
 	                    )
 	                )
@@ -21683,6 +21754,194 @@
 	};
 	
 	exports.default = Cover;
+
+/***/ },
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Projects = function Projects() {
+	  return _react2.default.createElement('div', null);
+	};
+	
+	exports.default = Projects;
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Team = function Team() {
+	    var meEngineers = [{ name: 'John Smith', img: 'http://placehold.it/300x300'
+	    }, { name: 'John Smith', img: 'http://placehold.it/300x300'
+	    }, { name: 'John Smith', img: 'http://placehold.it/300x300'
+	    }];
+	
+	    var eeEngineers = [{ name: 'John Smith', img: 'http://placehold.it/300x300'
+	    }, { name: 'John Smith', img: 'http://placehold.it/300x300'
+	    }, { name: 'John Smith', img: 'http://placehold.it/300x300'
+	    }];
+	
+	    var csEngineers = [{ name: 'John Smith', img: 'http://placehold.it/300x300'
+	    }, { name: 'John Smith', img: 'http://placehold.it/300x300'
+	    }, { name: 'John Smith', img: 'http://placehold.it/300x300'
+	    }];
+	
+	    var meTeam = meEngineers.map(function (member) {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'col-lg-4 col-sm-6 text-center' },
+	            _react2.default.createElement('img', { className: 'img-circle img-responsive img-center', src: member.img }),
+	            _react2.default.createElement(
+	                'h3',
+	                null,
+	                member.name
+	            )
+	        );
+	    });
+	
+	    var eeTeam = eeEngineers.map(function (member) {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'col-lg-4 col-sm-6 text-center' },
+	            _react2.default.createElement('img', { className: 'img-circle img-responsive img-center', src: member.img }),
+	            _react2.default.createElement(
+	                'h3',
+	                null,
+	                member.name
+	            )
+	        );
+	    });
+	
+	    var csTeam = csEngineers.map(function (member) {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'col-lg-4 col-sm-6 text-center' },
+	            _react2.default.createElement('img', { className: 'img-circle img-responsive img-center', src: member.img }),
+	            _react2.default.createElement(
+	                'h3',
+	                null,
+	                member.name
+	            )
+	        );
+	    });
+	
+	    return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	            'div',
+	            { 'class': 'row' },
+	            _react2.default.createElement(
+	                'div',
+	                { 'class': 'col-lg-12' },
+	                _react2.default.createElement(
+	                    'h1',
+	                    { 'class': 'page-header' },
+	                    'About Us',
+	                    _react2.default.createElement(
+	                        'small',
+	                        null,
+	                        'It\'s Nice to Meet You!'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?'
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'col-lg-12' },
+	                _react2.default.createElement(
+	                    'h2',
+	                    { className: 'page-header' },
+	                    'Mechanical Team'
+	                )
+	            ),
+	            meTeam
+	        ),
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'col-lg-12' },
+	                _react2.default.createElement(
+	                    'h2',
+	                    { className: 'page-header' },
+	                    'Eletrical Team'
+	                )
+	            ),
+	            eeTeam
+	        ),
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'col-lg-12' },
+	                _react2.default.createElement(
+	                    'h2',
+	                    { className: 'page-header' },
+	                    'Computer Science Team'
+	                )
+	            ),
+	            csTeam
+	        )
+	    );
+	};
+	
+	exports.default = Team;
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var About = function About() {
+	  return _react2.default.createElement('div', null);
+	};
+	
+	exports.default = About;
 
 /***/ }
 /******/ ]);
