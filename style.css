@@ -1,0 +1,20 @@
+.navbar-inverse {
+  background-color: #39185D;
+  border-color: #39185D;
+}
+
+html{ /* used for scrolling*/
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%; /* used for scrolling*/
+  overflow: auto; /* used for scrolling*/
+}
+
+section {
+  background-color: #39185D;
+  border-color: #39185D;
+  height: 1920px;
+}
