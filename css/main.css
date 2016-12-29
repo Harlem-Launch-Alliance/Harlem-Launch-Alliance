@@ -30,3 +30,11 @@ main {
 footer.page-footer {
   margin-top: -6px;
   padding-top: 35px; }
+
+nav .brand-logo {
+  padding-left: 7px; }
+
+nav {
+  line-height: 56px; }
+  nav ul a {
+    font-size: 1.35rem; }
