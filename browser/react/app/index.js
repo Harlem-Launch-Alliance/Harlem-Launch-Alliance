@@ -44,10 +44,7 @@ class App extends Component {
           handleClickProjects={this.handleClickProjects}
           handleClickCover={this.handleClickCover}
         />
-          { this.state.currentPage === 'Cover' ? <Cover /> : null }
-          { this.state.currentPage === 'Projects' ? <Projects /> : null }
-          { this.state.currentPage === 'About' ? <About /> : null }
-          { this.state.currentPage === 'Team' ? <Team /> : null }
+        { this.state.currentPage === 'Cover' ? <Cover /> : null }
         <Footer />
       </div>
     )
@@ -55,3 +52,7 @@ class App extends Component {
 }
 
 export default App;
+
+//           { this.state.currentPage === 'Projects' ? <Projects /> : null }
+//           { this.state.currentPage === 'About' ? <About /> : null }
+//           { this.state.currentPage === 'Team' ? <Team /> : null }

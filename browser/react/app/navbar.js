@@ -1,33 +1,12 @@
 import React from 'react';
+import {Navbar, NavItem} from 'react-materialize'
 
 const NavBar = (props) => {
   return (
-    <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div className="container">
-            <div className="navbar-header">
-                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span className="sr-only">Toggle navigation</span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                </button>
-                <a className="navbar-brand" onClick={props.handleClickCover}>Harlem Launch Association</a>
-            </div>
-            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul className="nav navbar-nav">
-                    <li>
-                        <a href="#" onClick={props.handleClickAbout}>About</a>
-                    </li>
-                    <li>
-                        <a onClick={props.handleClickProjects}>Projects</a>
-                    </li>
-                    <li>
-                        <a href="#" onClick={props.handleClickTeam}>Teams</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <Navbar className="purple darken-4" brand='Harlem Launch Alliance' right>
+      <NavItem href='get-started.html'>Getting started</NavItem>
+      <NavItem href='components.html'>Components</NavItem>
+    </Navbar>
   )
 }
 

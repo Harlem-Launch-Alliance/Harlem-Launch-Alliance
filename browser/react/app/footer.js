@@ -1,19 +1,23 @@
 import React from 'react';
+import { Footer } from 'react-materialize';
 
-const Footer = () => {
+const footer = () => {
   return (
-    <section>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12">
-            <h1 className="section-heading">Section Heading</h1>
-            <p className="lead section-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p className="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+     <Footer className="footer purple darken-4" copyrights="&copy; 2015 Copyright Text" moreLinks={
+        <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+      }
+      links={
+        <ul>
+          <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
+          <li><a className="grey-text text-lighten-3" href="#!">Link 2</a></li>
+          <li><a className="grey-text text-lighten-3" href="#!">Link 3</a></li>
+          <li><a className="grey-text text-lighten-3" href="#!">Link 4</a></li>
+        </ul>
+      }>
+        <h5 className="white-text">Footer Content</h5>
+        <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+    </Footer>
   );
 }
 
-export default Footer;
+export default footer;
