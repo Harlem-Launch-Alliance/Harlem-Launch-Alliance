@@ -37,7 +37,7 @@ nav .brand-logo {
 nav ul a {
   font-size: 1.35rem; }
 
-.cover-section, .about-section {
+.cover-section, .about-section, .projects-tab {
   height: 500px;
   background-color: #fcfcfc; }
 
@@ -60,3 +60,7 @@ nav .brand-logo {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 100px;
     line-height: 100px; } }
+
+.tabs .tab a {
+  color: #39185D;
+  font-weight: 3000; }
