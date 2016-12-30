@@ -3,12 +3,14 @@ import { Tabs, Tab } from 'react-materialize';
 
 const Projects = () => {
   return (
-    <Tabs className='tab-demo z-depth-1'>
-        <Tab title="Test 1">Test 1</Tab>
-        <Tab title="Test 2" active>Test 2</Tab>
-        <Tab title="Test 3">Test 3</Tab>
-        <Tab title="Test 4">Test 4</Tab>
-    </Tabs>
+    <div>
+      <Tabs className='tab-demo z-depth-1'>
+          <Tab title="Project 1"></Tab>
+          <Tab title="Project 2" active><div className="container section-white">STUFF</div></Tab>
+          <Tab title="Project 3">Project 3</Tab>
+          <Tab title="Project 4">Project 4</Tab>
+      </Tabs>
+    </div>
   )
 }
 

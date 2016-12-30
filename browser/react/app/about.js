@@ -2,19 +2,35 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="about-section">
-      <h1>ABOUT</h1>
-      <ul>
+    <div className="row">
+
+      <div className="col s3">
+        <div className="divider"></div>
+          <div className="deep-purple lighten-2">
+            <h5>ABOUT</h5>
+          </div>
+      </div>
+
+      <div className="col s9">
         <div>
-          <h4>SOME STUFF HERE</h4>
+          <div className="divider"></div>
+          <div className="section">
+            <h5>Section 1</h5>
+            <p>Stuff</p>
+          </div>
+          <div className="divider"></div>
+          <div className="section">
+            <h5>Section 2</h5>
+            <p>Stuff</p>
+          </div>
+          <div className="divider"></div>
+          <div className="section section-white">
+            <h5>Section 3</h5>
+            <p>Stuff</p>
+          </div>
         </div>
-        <div>
-          <h4>SOME STUFF HERE</h4>
-        </div>
-        <div>
-          <h4>SOME STUFF HERE</h4>
-        </div>
-      </ul>
+      </div>
+
     </div>
   )
 }

@@ -26507,7 +26507,7 @@
 	var NavBar = function NavBar(props) {
 	  return _react2.default.createElement(
 	    _reactMaterialize.Navbar,
-	    { className: 'purple darken-4 navbar', brand: 'Harlem Launch Alliance', right: true },
+	    { className: 'grey darken-4 navbar', brand: 'Harlem Launch Alliance', right: true },
 	    _react2.default.createElement(
 	      _reactRouter.Link,
 	      { to: 'projects' },
@@ -30622,7 +30622,7 @@
 	  return _react2.default.createElement(
 	    _reactMaterialize.Footer,
 	    {
-	      className: 'footer purple darken-4',
+	      className: 'footer grey darken-4',
 	      copyrights: '\xA9 2016 Copyright Harlem Launch Alliance', moreLinks: _react2.default.createElement(
 	        _reactRouter.Link,
 	        { to: '/', className: 'grey-text text-lighten-4 right', href: '#!' },
@@ -30636,8 +30636,8 @@
 	          null,
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/', className: 'grey-text text-lighten-3', href: '#!' },
-	            'Link 1'
+	            { to: '/projects', className: 'grey-text text-lighten-3', href: '#!' },
+	            'PROJECTS'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -30645,8 +30645,8 @@
 	          null,
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/', className: 'grey-text text-lighten-3', href: '#!' },
-	            'Link 2'
+	            { to: '/about', className: 'grey-text text-lighten-3', href: '#!' },
+	            'ABOUT'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -30654,8 +30654,8 @@
 	          null,
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/', className: 'grey-text text-lighten-3', href: '#!' },
-	            'Link 3'
+	            { to: '/team', className: 'grey-text text-lighten-3', href: '#!' },
+	            'TEAM'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -30663,8 +30663,8 @@
 	          null,
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/', className: 'grey-text text-lighten-3', href: '#!' },
-	            'Link 4'
+	            { to: '/sponsors', className: 'grey-text text-lighten-3', href: '#!' },
+	            'SPONSORS'
 	          )
 	        )
 	      )
@@ -30703,40 +30703,71 @@
 	var About = function About() {
 	  return _react2.default.createElement(
 	    "div",
-	    { className: "about-section" },
+	    { className: "row" },
 	    _react2.default.createElement(
-	      "h1",
-	      null,
-	      "ABOUT"
+	      "div",
+	      { className: "col s3" },
+	      _react2.default.createElement("div", { className: "divider" }),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "deep-purple lighten-2" },
+	        _react2.default.createElement(
+	          "h5",
+	          null,
+	          "ABOUT"
+	        )
+	      )
 	    ),
 	    _react2.default.createElement(
-	      "ul",
-	      null,
+	      "div",
+	      { className: "col s9" },
 	      _react2.default.createElement(
 	        "div",
 	        null,
+	        _react2.default.createElement("div", { className: "divider" }),
 	        _react2.default.createElement(
-	          "h4",
-	          null,
-	          "SOME STUFF HERE"
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        null,
+	          "div",
+	          { className: "section" },
+	          _react2.default.createElement(
+	            "h5",
+	            null,
+	            "Section 1"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Stuff"
+	          )
+	        ),
+	        _react2.default.createElement("div", { className: "divider" }),
 	        _react2.default.createElement(
-	          "h4",
-	          null,
-	          "SOME STUFF HERE"
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        null,
+	          "div",
+	          { className: "section" },
+	          _react2.default.createElement(
+	            "h5",
+	            null,
+	            "Section 2"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Stuff"
+	          )
+	        ),
+	        _react2.default.createElement("div", { className: "divider" }),
 	        _react2.default.createElement(
-	          "h4",
-	          null,
-	          "SOME STUFF HERE"
+	          "div",
+	          { className: "section section-white" },
+	          _react2.default.createElement(
+	            "h5",
+	            null,
+	            "Section 3"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Stuff"
+	          )
 	        )
 	      )
 	    )
@@ -30765,27 +30796,31 @@
 	
 	var Projects = function Projects() {
 	  return _react2.default.createElement(
-	    _reactMaterialize.Tabs,
-	    { className: 'tab-demo z-depth-1' },
+	    'div',
+	    null,
 	    _react2.default.createElement(
-	      _reactMaterialize.Tab,
-	      { title: 'Test 1' },
-	      'Test 1'
-	    ),
-	    _react2.default.createElement(
-	      _reactMaterialize.Tab,
-	      { title: 'Test 2', active: true },
-	      'Test 2'
-	    ),
-	    _react2.default.createElement(
-	      _reactMaterialize.Tab,
-	      { title: 'Test 3' },
-	      'Test 3'
-	    ),
-	    _react2.default.createElement(
-	      _reactMaterialize.Tab,
-	      { title: 'Test 4' },
-	      'Test 4'
+	      _reactMaterialize.Tabs,
+	      { className: 'tab-demo z-depth-1' },
+	      _react2.default.createElement(_reactMaterialize.Tab, { title: 'Project 1' }),
+	      _react2.default.createElement(
+	        _reactMaterialize.Tab,
+	        { title: 'Project 2', active: true },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'container section-white' },
+	          'STUFF'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        _reactMaterialize.Tab,
+	        { title: 'Project 3' },
+	        'Project 3'
+	      ),
+	      _react2.default.createElement(
+	        _reactMaterialize.Tab,
+	        { title: 'Project 4' },
+	        'Project 4'
+	      )
 	    )
 	  );
 	};
@@ -30814,38 +30849,110 @@
 	  return _react2.default.createElement(
 	    'div',
 	    null,
+	    _react2.default.createElement('img', { className: 'responsive-img', src: 'http://www.universetoday.com/wp-content/uploads/2016/04/26405462060_81f8289687_k.jpg' }),
 	    _react2.default.createElement(
-	      _reactMaterialize.Slider,
+	      _reactMaterialize.Row,
 	      null,
 	      _react2.default.createElement(
-	        _reactMaterialize.Slide,
-	        {
-	          src: 'http://lorempixel.com/580/250/nature/1',
-	          title: 'This is our big Tagline!' },
-	        'Here\'s our small slogan.'
+	        'h1',
+	        { className: 'center cover-title' },
+	        'Harlem Launch Association'
 	      ),
 	      _react2.default.createElement(
-	        _reactMaterialize.Slide,
-	        {
-	          src: 'http://lorempixel.com/580/250/nature/2',
-	          title: 'Left aligned Caption',
-	          placement: 'left' },
-	        'Here\'s our small slogan.'
-	      ),
-	      _react2.default.createElement(
-	        _reactMaterialize.Slide,
-	        {
-	          src: 'http://lorempixel.com/580/250/nature/3',
-	          title: 'Right aligned Caption',
-	          placement: 'right' },
-	        'Here\'s our small slogan.'
+	        'h3',
+	        { className: 'center cover-title' },
+	        'Bringing AeroSpace Engineering to the East Coast'
 	      )
 	    ),
-	    _react2.default.createElement('section', { className: 'cover-section' })
+	    _react2.default.createElement(
+	      _reactMaterialize.Row,
+	      null,
+	      _react2.default.createElement(
+	        _reactMaterialize.Col,
+	        { s: 4 },
+	        _react2.default.createElement(
+	          _reactMaterialize.Card,
+	          { className: 'small',
+	            header: _react2.default.createElement(
+	              _reactMaterialize.CardTitle,
+	              { image: 'http://placehold.it/350x150' },
+	              'Card Title'
+	            ),
+	            actions: [_react2.default.createElement(
+	              'a',
+	              { href: '#', key: '1' },
+	              'This is a Link'
+	            )] },
+	          'I am a very simple card. I am good at containing small bits of information.'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        _reactMaterialize.Col,
+	        { s: 4 },
+	        _react2.default.createElement(
+	          _reactMaterialize.Card,
+	          { className: 'small',
+	            header: _react2.default.createElement(
+	              _reactMaterialize.CardTitle,
+	              { image: 'http://placehold.it/350x150' },
+	              'Card Title'
+	            ),
+	            actions: [_react2.default.createElement(
+	              'a',
+	              { href: '#', key: '1' },
+	              'This is a Link'
+	            )] },
+	          'I am a very simple card. I am good at containing small bits of information.'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        _reactMaterialize.Col,
+	        { s: 4 },
+	        _react2.default.createElement(
+	          _reactMaterialize.Card,
+	          { className: 'small',
+	            header: _react2.default.createElement(
+	              _reactMaterialize.CardTitle,
+	              { image: 'http://placehold.it/350x150' },
+	              'Card Title'
+	            ),
+	            actions: [_react2.default.createElement(
+	              'a',
+	              { href: '#', key: '1' },
+	              'This is a Link'
+	            )] },
+	          'I am a very simple card. I am good at containing small bits of information.'
+	        )
+	      )
+	    )
 	  );
 	};
 	
 	exports.default = Cover;
+	
+	// slider
+	
+	// <Slider className="z-depth-4">
+	//         <Slide
+	//           src="http://lorempixel.com/580/250/nature/1"
+	//           title="This is our big Tagline!">
+	//           Here's our small slogan.
+	//         </Slide>
+	//         <Slide
+	//           src="http://lorempixel.com/580/250/nature/2"
+	//           title="Left aligned Caption"
+	//           placement="left">
+	//           Here's our small slogan.
+	//         </Slide>
+	//         <Slide
+	//           src="http://lorempixel.com/580/250/nature/3"
+	//           title="Right aligned Caption"
+	//           placement="right">
+	//           Here's our small slogan.
+	//         </Slide>
+	//       </Slider>
+	//       <section className="cover-section">
+	//       </section>
 
 /***/ },
 /* 282 */
@@ -30881,7 +30988,7 @@
 /* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -30895,12 +31002,43 @@
 	
 	var Sponsors = function Sponsors() {
 	  return _react2.default.createElement(
-	    'div',
-	    null,
+	    "div",
+	    { className: "section-white" },
 	    _react2.default.createElement(
-	      'h1',
+	      "h1",
 	      null,
-	      'Sponsors'
+	      "SPONSORS"
+	    ),
+	    _react2.default.createElement(
+	      "ul",
+	      null,
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h4",
+	          null,
+	          "SOME STUFF HERE"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h4",
+	          null,
+	          "SOME STUFF HERE"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h4",
+	          null,
+	          "SOME STUFF HERE"
+	        )
+	      )
 	    )
 	  );
 	};
@@ -30911,7 +31049,7 @@
 /* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -30925,12 +31063,43 @@
 	
 	var Contact = function Contact() {
 	  return _react2.default.createElement(
-	    'div',
-	    null,
+	    "div",
+	    { className: "section-white" },
 	    _react2.default.createElement(
-	      'h1',
+	      "h1",
 	      null,
-	      'Contact'
+	      "CONTACT"
+	    ),
+	    _react2.default.createElement(
+	      "ul",
+	      null,
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h4",
+	          null,
+	          "SOME STUFF HERE"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h4",
+	          null,
+	          "SOME STUFF HERE"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h4",
+	          null,
+	          "SOME STUFF HERE"
+	        )
+	      )
 	    )
 	  );
 	};

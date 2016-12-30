@@ -18,8 +18,8 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
+  font-style: bold;
 }
 
 section {
@@ -49,9 +49,13 @@ nav {
   }
 }
 
-.cover-section, .about-section, .projects-tab {
-  height: 500px;
-  background-color: #fcfcfc;
+.cover-section, .section-white, .projects-tab {
+  height: 800px;
+  background-color: #F7F7F7;
+}
+
+.cover-title {
+  color: #F7F7F7;
 }
 
 nav {
@@ -80,7 +84,6 @@ nav .brand-logo {
     }
 }
 
-.tabs .tab a {
-  color: #39185D;
-  font-weight: 3000;
+img {
+  margin-top: -1px;
 }
