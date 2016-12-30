@@ -4,9 +4,11 @@ import { Link } from 'react-router'
 
 const NavBar = (props) => {
   return (
-    <Navbar className="purple darken-4" brand="Harlem Launch Alliance" right>
-      <Link to="projects">Projects</Link>
-      <Link to="about">About</Link>
+    <Navbar className="purple darken-4 navbar" brand="Harlem Launch Alliance" right>
+      <Link to="projects">PROJECTS</Link>
+      <Link to="about" >ABOUT</Link>
+      <Link to="contact" >CONTACT</Link>
+      <Link to="sponsors" >SPONSORS</Link>
     </Navbar>
   )
 }

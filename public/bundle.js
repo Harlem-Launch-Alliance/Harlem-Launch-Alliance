@@ -21536,16 +21536,26 @@
 	var NavBar = function NavBar(props) {
 	  return _react2.default.createElement(
 	    _reactMaterialize.Navbar,
-	    { className: 'purple darken-4', brand: 'Harlem Launch Alliance', right: true },
+	    { className: 'purple darken-4 navbar', brand: 'Harlem Launch Alliance', right: true },
 	    _react2.default.createElement(
 	      _reactRouter.Link,
 	      { to: 'projects' },
-	      'Projects'
+	      'PROJECTS'
 	    ),
 	    _react2.default.createElement(
 	      _reactRouter.Link,
 	      { to: 'about' },
-	      'About'
+	      'ABOUT'
+	    ),
+	    _react2.default.createElement(
+	      _reactRouter.Link,
+	      { to: 'contact' },
+	      'CONTACT'
+	    ),
+	    _react2.default.createElement(
+	      _reactRouter.Link,
+	      { to: 'sponsors' },
+	      'SPONSORS'
 	    )
 	  );
 	};
@@ -25707,7 +25717,7 @@
 /* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -25717,13 +25727,42 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactMaterialize = __webpack_require__(180);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Cover = function Cover() {
 	  return _react2.default.createElement(
-	    "header",
+	    'div',
 	    null,
-	    _react2.default.createElement("img", { className: "responsive-img", src: "http://placehold.it/1920x1080" })
+	    _react2.default.createElement(
+	      _reactMaterialize.Slider,
+	      null,
+	      _react2.default.createElement(
+	        _reactMaterialize.Slide,
+	        {
+	          src: 'http://lorempixel.com/580/250/nature/1',
+	          title: 'This is our big Tagline!' },
+	        'Here\'s our small slogan.'
+	      ),
+	      _react2.default.createElement(
+	        _reactMaterialize.Slide,
+	        {
+	          src: 'http://lorempixel.com/580/250/nature/2',
+	          title: 'Left aligned Caption',
+	          placement: 'left' },
+	        'Here\'s our small slogan.'
+	      ),
+	      _react2.default.createElement(
+	        _reactMaterialize.Slide,
+	        {
+	          src: 'http://lorempixel.com/580/250/nature/3',
+	          title: 'Right aligned Caption',
+	          placement: 'right' },
+	        'Here\'s our small slogan.'
+	      )
+	    ),
+	    _react2.default.createElement('section', { className: 'cover-section' })
 	  );
 	};
 	
@@ -25752,7 +25791,7 @@
 	    _react2.default.createElement(
 	      'h1',
 	      null,
-	      'HELLO'
+	      'PROJECTS'
 	    )
 	  );
 	};
@@ -25760,8 +25799,7 @@
 	exports.default = Projects;
 
 /***/ },
-/* 225 */,
-/* 226 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25776,8 +25814,77 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	var Team = function Team() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'TEAM'
+	    )
+	  );
+	};
+	
+	exports.default = Team;
+
+/***/ },
+/* 226 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
 	var About = function About() {
-	  return _react2.default.createElement('div', null);
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "about-section" },
+	    _react2.default.createElement(
+	      "h1",
+	      null,
+	      "ABOUT"
+	    ),
+	    _react2.default.createElement(
+	      "ul",
+	      null,
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h4",
+	          null,
+	          "SOME STUFF HERE"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h4",
+	          null,
+	          "SOME STUFF HERE"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h4",
+	          null,
+	          "SOME STUFF HERE"
+	        )
+	      )
+	    )
+	  );
 	};
 	
 	exports.default = About;
@@ -25814,6 +25921,18 @@
 	
 	var _cover2 = _interopRequireDefault(_cover);
 	
+	var _team = __webpack_require__(225);
+	
+	var _team2 = _interopRequireDefault(_team);
+	
+	var _sponsors = __webpack_require__(283);
+	
+	var _sponsors2 = _interopRequireDefault(_sponsors);
+	
+	var _contact = __webpack_require__(284);
+	
+	var _contact2 = _interopRequireDefault(_contact);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Routes = function Routes() {
@@ -25826,6 +25945,9 @@
 	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _cover2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'projects', component: _projects2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: _contact2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'sponsors', component: _sponsors2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'team', component: _team2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: '*', component: _cover2.default })
 	    )
 	  );
@@ -30737,6 +30859,66 @@
 	  });
 	};
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 283 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Sponsors = function Sponsors() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'Sponsors'
+	    )
+	  );
+	};
+	
+	exports.default = Sponsors;
+
+/***/ },
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Contact = function Contact() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'Contact'
+	    )
+	  );
+	};
+	
+	exports.default = Contact;
 
 /***/ }
 /******/ ]);

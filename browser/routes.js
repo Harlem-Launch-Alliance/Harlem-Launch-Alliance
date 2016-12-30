@@ -4,6 +4,9 @@ import App from './react/app';
 import About from './react/app/about';
 import Projects from './react/app/projects';
 import Cover from './react/app/cover';
+import Team from './react/app/team';
+import Sponsors from './react/app/sponsors';
+import Contact from './react/app/contact';
 
 const Routes = () => {
   return (
@@ -12,6 +15,9 @@ const Routes = () => {
         <IndexRoute component={Cover} />
         <Route path="about" component={About} />
         <Route path="projects" component={Projects} />
+        <Route path="contact" component={Contact} />
+        <Route path="sponsors" component={Sponsors} />
+        <Route path="team" component={Team} />
         <Route path="*" component={Cover} />
       </Route>
     </Router>

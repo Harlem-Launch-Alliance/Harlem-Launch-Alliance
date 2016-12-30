@@ -15,18 +15,17 @@ html { /* used for scrolling */
 body {
   height: 100%; // used for scrolling
   overflow: auto; // used for scrolling
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
 }
 
 section {
   background-color: #39185D;
   border-color: #39185D;
   height: 1920px;
-}
-
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
 }
 
 main {
@@ -39,11 +38,10 @@ footer.page-footer {
 }
 
 nav .brand-logo {
-  padding-left: 7px;
+  padding-left: 20px;
 }
 
 nav {
-  line-height: 56px;
   ul {
     a {
       font-size: 1.35rem;
@@ -51,11 +49,33 @@ nav {
   }
 }
 
-// @media only screen and (min-width: 601px) {
-//   nav {
-//     line-height: 0;
-//   }
-// }
-// nav {
-//
-// }
+.cover-section, .about-section {
+  height: 500px;
+  background-color: #fcfcfc;
+}
+
+nav {
+    height: 100px;
+    line-height: 100px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: 100px;
+    line-height: 100px;
+}
+
+nav .button-collapse i {
+    height: 100px;
+    line-height: 100px;
+}
+
+nav .brand-logo {
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 100px;
+        line-height: 100px;
+    }
+}
