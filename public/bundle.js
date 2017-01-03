@@ -30856,12 +30856,12 @@
 	      _react2.default.createElement(
 	        'h1',
 	        { className: 'center cover-title' },
-	        'Harlem Launch Association'
+	        'Harlem Launch Alliance'
 	      ),
 	      _react2.default.createElement(
 	        'h3',
 	        { className: 'center cover-title' },
-	        'Bringing AeroSpace Engineering to the East Coast'
+	        'Bringing Aerospace Engineering to the East Coast'
 	      )
 	    ),
 	    _react2.default.createElement(

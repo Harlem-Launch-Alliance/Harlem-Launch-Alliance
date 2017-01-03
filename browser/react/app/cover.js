@@ -6,8 +6,8 @@ const Cover = () => {
     <div>
       <img className="responsive-img" src="http://www.universetoday.com/wp-content/uploads/2016/04/26405462060_81f8289687_k.jpg" />
       <Row>
-        <h1 className="center cover-title">Harlem Launch Association</h1>
-        <h3 className="center cover-title">Bringing AeroSpace Engineering to the East Coast</h3>
+        <h1 className="center cover-title">Harlem Launch Alliance</h1>
+        <h3 className="center cover-title">Bringing Aerospace Engineering to the East Coast</h3>
       </Row>
       <Row>
         <Col s={4}>
