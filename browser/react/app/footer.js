@@ -6,9 +6,10 @@ const footer = () => {
   return (
     <Footer
       className="footer grey darken-4"
-      copyrights="&copy; 2016 Copyright Harlem Launch Alliance" moreLinks={
-          <Link to="/" className="grey-text text-lighten-4 right" href="#!">More Links</Link>
-        }
+      copyrights="&copy; 2016 Copyright Harlem Launch Alliance"
+      moreLinks={
+        <Link to="/" className="grey-text text-lighten-4 right" href="#!">More Links</Link>
+      }
       links={
         <ul>
           <li><Link to="/projects" className="grey-text text-lighten-3" href="#!">PROJECTS</Link></li>
@@ -18,8 +19,8 @@ const footer = () => {
         </ul>
       }
     >
-        <h5 className="white-text">Footer Content</h5>
-        <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      <h5 className="white-text">Footer Content</h5>
+      <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
     </Footer>
   );
 }
