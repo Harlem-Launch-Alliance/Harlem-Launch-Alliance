@@ -7,7 +7,7 @@ const Cover = () => {
       <img className="responsive-img" src="assets/images/Messenger-1Team.jpg" />
       <Row className="cover-title">
         <h1 className="center">Harlem Launch Alliance</h1>
-        <h3 className="center">Bringing Aerospace Engineering to the East Coast</h3>
+        <h3 className="center" style={{ color: '#39185D' }}>Bringing Aerospace Engineering to the East Coast</h3>
       </Row>
       <Row>
         <Col s={4}>
