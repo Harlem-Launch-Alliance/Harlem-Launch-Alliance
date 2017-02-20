@@ -30715,75 +30715,56 @@
 	          "h5",
 	          null,
 	          "ABOUT"
+	        ),
+	        _react2.default.createElement("hr", null),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "The Harlem Launch Alliance (HLA) is a registered 501c3 nonprofit corporation headquartered in the Grove School of Engineering at the City College of New York. The purpose of the HLA is to \u201Csupport amateur experimental aerospace research\u201D at CCNY and in Harlem in general (we share our Harlem neighborhood with Columbia University and their Columbia Space Initiative group). That research is primarily directed at experimental rocketry, most notably hybrid rocketry, but also includes composite materials manufacturing and novel new recovery system schemes."
 	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "div",
-	      { className: "col s9" },
+	      ),
 	      _react2.default.createElement(
 	        "div",
 	        null,
-	        _react2.default.createElement("div", { className: "divider" }),
 	        _react2.default.createElement(
-	          "div",
-	          { className: "section" },
-	          _react2.default.createElement(
-	            "h5",
-	            null,
-	            "Section 1"
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "Stuff"
-	          )
+	          "h5",
+	          null,
+	          "History"
 	        ),
-	        _react2.default.createElement("div", { className: "divider" }),
+	        _react2.default.createElement("hr", null),
 	        _react2.default.createElement(
-	          "div",
-	          { className: "section" },
-	          _react2.default.createElement(
-	            "h5",
-	            null,
-	            "Section 2"
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "Stuff"
-	          )
+	          "p",
+	          null,
+	          "The HLA was originally organized as the CCNY Office of Experimental Rocketry as a loose association of undergraduate engineering clubs at the Grove School of Engineering interested in continuing the development of at that time GSOE\u2019s two year old rocketry program. The roots of this program go back to the CCNY Aerospace Club which competed in the International Cansat Competition and the First Robotics Competition for a number of years in the early 2010\u2019s and before."
 	        ),
-	        _react2.default.createElement("div", { className: "divider" }),
+	        _react2.default.createElement("br", null),
 	        _react2.default.createElement(
-	          "div",
-	          { className: "section section-white" },
-	          _react2.default.createElement(
-	            "h5",
-	            null,
-	            "Section 3"
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "Stuff"
-	          )
+	          "p",
+	          null,
+	          "In the spring and fall of 2014, former and active members of CCNY Aerospace founded the Planetary & Rocket Science Group (PRSG) and secured Chartered membership in the National Association of Rocketry (NAR Section #756). PRSG eventually absorbed the NAR Chapter\u2019s membership, and assumed responsibility over the rocketry program. The 2014-2015 academic year was spent recruiting and training new membership, self-educating in all the basics of amateur rocketry, and searching for a competition or challenge to test the program."
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "By the summer of 2015, PRSG discovered the Experimental Sounding Rocket Association (ESRA), and their Inter-collegiate Rocket Engineering Competition (IREC). In the search for a new and novel challenge, PRSG also discovered the much neglected field of hybrid rocketry. PRSG began organizing Project Messenger. The goal of which was to fly a student-build hybrid rocket at the 2016 IREC. More than that, with Messenger, we intended to lay down roots that would flourish in the coming years, not just set out with a linear goal."
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Messenger-1f was a lesson in humility. Despite an inspired effort on the part of the engineering team, the hybrid engine development had to be shelved for a later time as rocket manufacturing and recovery system development occupied the entire attention of the team. A new vision for Project Messenger was developed, one that put an emphasis on manufacturing and recovery systems. Even with this more reasonable workload, the rocketry program at CCNY was dealt with its first failure: the Messenger-1 launch was aborted, just minutes way from launch."
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "During the summer of 2016, a two-project vision for the program was developed. Project Messenger would continue for the next two years with four launches intended to perfect a novel recovery system concept. Running simultaneously, and managed by the American Society of Mechanical Engineers (ASME), Project Aries would begin a two year program to build one of the first paraffin-fueled hybrid rocket engines. The CCNY Aerospace Club, reeling after years of poor management, would be taken over and re-purposed in the spring of 2017 to manage technical integration between both Aries and Messenger. The association of clubs became the CCNY Office of Experimental Rocketry, which soon after was re-organized as the HLA."
 	        )
 	      )
 	    )
 	  );
 	};
-	
-	// About
-	// The Harlem Launch Alliance (HLA) is a registered 501c3 nonprofit corporation headquartered in the Grove School of Engineering at the City College of New York. The purpose of the HLA is to “support amateur experimental aerospace research” at CCNY and in Harlem in general (we share our Harlem neighborhood with Columbia University and their Columbia Space Initiative group). That research is primarily directed at experimental rocketry, most notably hybrid rocketry, but also includes composite materials manufacturing and novel new recovery system schemes.
-	
-	// History
-	// The HLA was originally organized as the CCNY Office of Experimental Rocketry as a loose association of undergraduate engineering clubs at the Grove School of Engineering interested in continuing the development of at that time GSOE’s two year old rocketry program. The roots of this program go back to the CCNY Aerospace Club which competed in the International Cansat Competition and the First Robotics Competition for a number of years in the early 2010’s and before.
-	// In the spring and fall of 2014, former and active members of CCNY Aerospace founded the Planetary & Rocket Science Group (PRSG) and secured Chartered membership in the National Association of Rocketry (NAR Section #756). PRSG eventually absorbed the NAR Chapter’s membership, and assumed responsibility over the rocketry program. The 2014-2015 academic year was spent recruiting and training new membership, self-educating in all the basics of amateur rocketry, and searching for a competition or challenge to test the program.
-	// By the summer of 2015, PRSG discovered the Experimental Sounding Rocket Association (ESRA), and their Inter-collegiate Rocket Engineering Competition (IREC). In the search for a new and novel challenge, PRSG also discovered the much neglected field of hybrid rocketry. PRSG began organizing Project Messenger. The goal of which was to fly a student-build hybrid rocket at the 2016 IREC. More than that, with Messenger, we intended to lay down roots that would flourish in the coming years, not just set out with a linear goal.
-	// Messenger-1f was a lesson in humility. Despite an inspired effort on the part of the engineering team, the hybrid engine development had to be shelved for a later time as rocket manufacturing and recovery system development occupied the entire attention of the team. A new vision for Project Messenger was developed, one that put an emphasis on manufacturing and recovery systems. Even with this more reasonable workload, the rocketry program at CCNY was dealt with its first failure: the Messenger-1 launch was aborted, just minutes way from launch.
-	// During the summer of 2016, a two-project vision for the program was developed. Project Messenger would continue for the next two years with four launches intended to perfect a novel recovery system concept. Running simultaneously, and managed by the American Society of Mechanical Engineers (ASME), Project Aries would begin a two year program to build one of the first paraffin-fueled hybrid rocket engines. The CCNY Aerospace Club, reeling after years of poor management, would be taken over and re-purposed in the spring of 2017 to manage technical integration between both Aries and Messenger. The association of clubs became the CCNY Office of Experimental Rocketry, which soon after was re-organized as the HLA.
-	
 	
 	exports.default = About;
 
@@ -30810,47 +30791,62 @@
 	    'div',
 	    null,
 	    _react2.default.createElement(
-	      _reactMaterialize.Tabs,
-	      { className: 'tab-demo z-depth-1' },
-	      _react2.default.createElement(_reactMaterialize.Tab, { title: 'Project 1' }),
+	      'div',
+	      null,
 	      _react2.default.createElement(
-	        _reactMaterialize.Tab,
-	        { title: 'Project 2', active: true },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container section-white' },
-	          'STUFF'
-	        )
+	        'h1',
+	        null,
+	        'Project Messenger'
 	      ),
+	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
-	        _reactMaterialize.Tab,
-	        { title: 'Project 3' },
-	        'Project 3'
+	        'p',
+	        null,
+	        'Project Messenger is a two year project tasked with developing rocket manufacturing techniques and recovery systems. The project is managed by the Grove School of Engineering (GSOE) undergraduate engineering club, Planetary & Rocket Science Group (PRSG). The Project Messenger team is currently designing the CX-2 for flight at the 2017 IREC in New Mexico. The CX-2 has a target apogee of 10,000 feet.'
 	      ),
+	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
-	        _reactMaterialize.Tab,
-	        { title: 'Project 4' },
-	        'Project 4'
+	        'p',
+	        null,
+	        'The recovery system is a gyroscope-triggered compressed-gas initiated dual-event (drogue and main chute) deployment. This scheme is ideal for high-altitude flight as the ejection of the parachutes occurs at the optimum deployment angle, and the compress-gas eliminates the need for large black powder charges.'
+	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'Messenger-2 is slated to fly in June of 2017, with Messenger-3 and 4 tentatively scheduled for August and January of next year.'
 	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'Project Aries'
+	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'Project Aries, like Project Messenger, is also a two year project. Aries is tasked with developing hybrid rocket engines powered by paraffin wax \u2013 based fuels. The CCNY chapter of the American Society of Mechanical Engineers (ASME) manages the project. The Aries team is currently designing a test engine to experiment with variations of the paraffin wax fuel, as well as beginning preliminary design work for a flight-ready engine.'
+	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'The principle research challenges of Project Aries are the experimentation with additives required to make the paraffin wax fuels viable for flight. These additives are meant to accomplish two things: increase the opacity of the fuel to thermal radiation (ensuring that only the layer of paraffin exposed to flame in the combustion chamber melts) and increasing the mechanical strength of the fuel (to ensure the grain does not come apart during combustion).'
+	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'The first live-fire tests of the test engine are slated for September of 2017, with the Aries-1 mission scheduled for the summer of 2018 with a target altitude of 30,000 feet.'
+	      ),
+	      _react2.default.createElement('br', null)
 	    )
 	  );
 	};
-	
-	// Project Messenger
-	
-	// Project Messenger is a two year project tasked with developing rocket manufacturing techniques and recovery systems. The project is managed by the Grove School of Engineering (GSOE) undergraduate engineering club, Planetary & Rocket Science Group (PRSG). The Project Messenger team is currently designing the CX-2 for flight at the 2017 IREC in New Mexico. The CX-2 has a target apogee of 10,000 feet.
-	
-	// The recovery system is a gyroscope-triggered compressed-gas initiated dual-event (drogue and main chute) deployment. This scheme is ideal for high-altitude flight as the ejection of the parachutes occurs at the optimum deployment angle, and the compress-gas eliminates the need for large black powder charges.
-	
-	// Messenger-2 is slated to fly in June of 2017, with Messenger-3 and 4 tentatively scheduled for August and January of next year.
-	
-	// Project Aries
-	
-	// Project Aries, like Project Messenger, is also a two year project. Aries is tasked with developing hybrid rocket engines powered by paraffin wax – based fuels. The CCNY chapter of the American Society of Mechanical Engineers (ASME) manages the project. The Aries team is currently designing a test engine to experiment with variations of the paraffin wax fuel, as well as beginning preliminary design work for a flight-ready engine.
-	
-	// The principle research challenges of Project Aries are the experimentation with additives required to make the paraffin wax fuels viable for flight. These additives are meant to accomplish two things: increase the opacity of the fuel to thermal radiation (ensuring that only the layer of paraffin exposed to flame in the combustion chamber melts) and increasing the mechanical strength of the fuel (to ensure the grain does not come apart during combustion).
-	
-	// The first live-fire tests of the test engine are slated for September of 2017, with the Aries-1 mission scheduled for the summer of 2018 with a target altitude of 30,000 feet.
 	
 	exports.default = Projects;
 
