@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 const footer = () => {
   return (
     <Footer
-      className="footer grey darken-4"
+      style={{ 'backgroundColor': '#39185D' }}
       copyrights="&copy; 2016 Copyright Harlem Launch Alliance"
       moreLinks={
         <Link to="/" className="grey-text text-lighten-4 right" href="#!">More Links</Link>

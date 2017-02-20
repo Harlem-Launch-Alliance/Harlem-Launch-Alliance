@@ -2,17 +2,14 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="row">
-      <div className="col s3">
-        <div className="divider"></div>
-          <div className="deep-purple lighten-2">
-            <h5>ABOUT</h5>
+    <div>
+          <div>
+            <h2>ABOUT</h2>
             <hr></hr>
             <p>The Harlem Launch Alliance (HLA) is a registered 501c3 nonprofit corporation headquartered in the Grove School of Engineering at the City College of New York. The purpose of the HLA is to “support amateur experimental aerospace research” at CCNY and in Harlem in general (we share our Harlem neighborhood with Columbia University and their Columbia Space Initiative group). That research is primarily directed at experimental rocketry, most notably hybrid rocketry, but also includes composite materials manufacturing and novel new recovery system schemes.</p>
           </div>
-
           <div>
-            <h5>History</h5>
+            <h2>History</h2>
             <hr></hr>
             <p>The HLA was originally organized as the CCNY Office of Experimental Rocketry as a loose association of undergraduate engineering clubs at the Grove School of Engineering interested in continuing the development of at that time GSOE’s two year old rocketry program. The roots of this program go back to the CCNY Aerospace Club which competed in the International Cansat Competition and the First Robotics Competition for a number of years in the early 2010’s and before.</p>
             <br></br>
@@ -25,7 +22,6 @@ const About = () => {
             <p>During the summer of 2016, a two-project vision for the program was developed. Project Messenger would continue for the next two years with four launches intended to perfect a novel recovery system concept. Running simultaneously, and managed by the American Society of Mechanical Engineers (ASME), Project Aries would begin a two year program to build one of the first paraffin-fueled hybrid rocket engines. The CCNY Aerospace Club, reeling after years of poor management, would be taken over and re-purposed in the spring of 2017 to manage technical integration between both Aries and Messenger. The association of clubs became the CCNY Office of Experimental Rocketry, which soon after was re-organized as the HLA.</p>
           </div>
       </div>
-    </div>
   )
 }
 

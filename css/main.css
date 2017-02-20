@@ -41,9 +41,6 @@ nav ul a {
   height: 800px;
   background-color: #F7F7F7; }
 
-.cover-title {
-  color: #F7F7F7; }
-
 nav {
   height: 100px;
   line-height: 100px; }
@@ -66,3 +63,7 @@ nav .brand-logo {
 
 img {
   margin-top: -1px; }
+
+.cover-title {
+  margin-top: 5%;
+  margin-bottom: 5%; }

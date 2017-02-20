@@ -1,39 +1,42 @@
 import React from 'react';
-import { Slider, Slide, Card, CardTitle, Row, Col } from 'react-materialize'
+import { Card, CardTitle, Row, Col } from 'react-materialize'
 
 const Cover = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: '#F7F7F7' }}>
       <img className="responsive-img" src="assets/images/Messenger-1Team.jpg" />
-      <Row>
-        <h1 className="center cover-title">Harlem Launch Alliance</h1>
-        <h3 className="center cover-title">Bringing Aerospace Engineering to the East Coast</h3>
+      <Row className="cover-title">
+        <h1 className="center">Harlem Launch Alliance</h1>
+        <h3 className="center">Bringing Aerospace Engineering to the East Coast</h3>
       </Row>
       <Row>
         <Col s={4}>
-          <Card className='small'
-        header={<CardTitle image='http://placehold.it/350x150'>Card Title</CardTitle>}
-        actions={[<a href='#' key="1" >This is a Link</a>]}>
-        I am a very simple card. I am good at containing small bits of information.
+          <Card
+            className='small'
+            header={<CardTitle image='http://placehold.it/350x150'>Card Title</CardTitle>}
+            actions={[<a href='#' key="1" >This is a Link</a>]}>
+            This card will have info on PRSG.
           </Card>
         </Col>
 
         <Col s={4}>
-          <Card className='small'
+          <Card
+            className='small'
             header={<CardTitle image='http://placehold.it/350x150'>Card Title</CardTitle>}
             actions={[<a href='#' key="1">This is a Link</a>]}>
-            I am a very simple card. I am good at containing small bits of information.
+            This card will have info on ASME
           </Card>
         </Col>
 
         <Col s={4}>
-          <Card className='small'
-            header={<CardTitle image='http://placehold.it/350x150'>Card Title</CardTitle>}
+          <Card
+            className='small'
+            header={<CardTitle
+            image='http://placehold.it/350x150'>Card Title</CardTitle>}
             actions={[<a href='#' key="1">This is a Link</a>]}>
-            I am a very simple card. I am good at containing small bits of information.
+            This card will have info on AeroSpace Club.
           </Card>
         </Col>
-
       </Row>
     </div>
   )
