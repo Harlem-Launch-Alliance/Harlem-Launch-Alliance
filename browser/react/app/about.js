@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div>
-          <div>
+    <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <div >
             <h2>ABOUT</h2>
             <hr></hr>
             <p>The Harlem Launch Alliance (HLA) is a registered 501c3 nonprofit corporation headquartered in the Grove School of Engineering at the City College of New York. The purpose of the HLA is to “support amateur experimental aerospace research” at CCNY and in Harlem in general (we share our Harlem neighborhood with Columbia University and their Columbia Space Initiative group). That research is primarily directed at experimental rocketry, most notably hybrid rocketry, but also includes composite materials manufacturing and novel new recovery system schemes.</p>

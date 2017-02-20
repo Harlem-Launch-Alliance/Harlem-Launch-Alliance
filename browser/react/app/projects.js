@@ -3,7 +3,7 @@ import { Tabs, Tab } from 'react-materialize';
 
 const Projects = () => {
   return (
-    <div>
+    <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
       <div>
         <h1>Project Messenger</h1>
         <br></br>
