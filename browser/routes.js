@@ -7,6 +7,7 @@ import Cover from './react/app/cover';
 import Team from './react/app/team';
 import Sponsors from './react/app/sponsors';
 import Contact from './react/app/contact';
+import Gallery from './react/app/gallery';
 
 const Routes = () => {
   return (
@@ -18,6 +19,7 @@ const Routes = () => {
         <Route path="contact" component={Contact} />
         <Route path="sponsors" component={Sponsors} />
         <Route path="team" component={Team} />
+        <Route path="gallery" component={Gallery} />
         <Route path="*" component={Cover} />
       </Route>
     </Router>

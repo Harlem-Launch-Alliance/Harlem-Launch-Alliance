@@ -4,7 +4,7 @@ import { Slider, Slide, Card, CardTitle, Row, Col } from 'react-materialize'
 const Cover = () => {
   return (
     <div>
-      <img className="responsive-img" src="http://www.universetoday.com/wp-content/uploads/2016/04/26405462060_81f8289687_k.jpg" />
+      <img className="responsive-img" src="assets/images/Messenger-1Team.jpg" />
       <Row>
         <h1 className="center cover-title">Harlem Launch Alliance</h1>
         <h3 className="center cover-title">Bringing Aerospace Engineering to the East Coast</h3>

@@ -9,6 +9,7 @@ const NavBar = (props) => {
       <Link to="about" >ABOUT</Link>
       <Link to="contact" >CONTACT</Link>
       <Link to="sponsors" >SPONSORS</Link>
+      <Link to="gallery" >GALLERY</Link>
     </Navbar>
   )
 }
