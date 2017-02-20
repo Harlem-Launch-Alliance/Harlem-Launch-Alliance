@@ -20,7 +20,6 @@ const footer = () => {
           <li><Link to="/projects" className="grey-text text-lighten-3" href="#!">PROJECTS</Link></li>
           <li><Link to="/about" className="grey-text text-lighten-3" href="#!">ABOUT</Link></li>
           <li><Link to="/team" className="grey-text text-lighten-3" href="#!">TEAM</Link></li>
-          <li><Link to="/sponsors" className="grey-text text-lighten-3" href="#!">SPONSORS</Link></li>
         </ul>
       }
     >
