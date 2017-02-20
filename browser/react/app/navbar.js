@@ -9,9 +9,9 @@ const NavBar = (props) => {
       brand={<img style={{ height: '100px' }} className="responsive-img" src="assets/images/HLALogo.png" />} right>
       <Link to="projects">PROJECTS</Link>
       <Link to="about" >ABOUT</Link>
-      <Link to="contact" >CONTACT</Link>
-      <Link to="sponsors" >SPONSORS</Link>
       <Link to="gallery" >GALLERY</Link>
+      <Link to="contact" >CONTACT</Link>
+      <Link to="team" >TEAM</Link>
     </Navbar>
   )
 }

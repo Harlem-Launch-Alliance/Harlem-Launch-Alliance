@@ -8,7 +8,12 @@ const footer = () => {
       style={{ 'backgroundColor': '#39185D' }}
       copyrights="&copy; 2016 Copyright Harlem Launch Alliance"
       moreLinks={
-        <Link to="/" className="grey-text text-lighten-4 right" href="#!">More Links</Link>
+        <div>
+        <Link to="/" className="grey-text text-lighten-4 right" href="#!">FACEBOOK</Link>
+        <Link to="/" className="grey-text text-lighten-4 right" href="#!">YOUTUBE</Link>
+        <Link to="/" className="grey-text text-lighten-4 right" href="#!">TWITTER</Link>
+        <Link to="/" className="grey-text text-lighten-4 right" href="#!">INSTAGRAM</Link>
+        </div>
       }
       links={
         <ul>
@@ -21,6 +26,7 @@ const footer = () => {
     >
       <h5 className="white-text">Footer Content</h5>
       <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      <img className="responsive-img" src="assets/images/HLALogo.png" />
     </Footer>
   );
 }
