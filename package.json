@@ -5,8 +5,9 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack -w & nodemon -e js,css,scss,html server.js",
-    "build-css": "node-sass -w assets/stylesheets/main.scss -o css/"
+    "start": "webpack -w -e js,css,scss,html server.js",
+    "build-css": "node-sass -w assets/stylesheets/main.scss -o css/",
+    "start-dev": "webpack -w & nodemon -e js,css,scss,html server.js",
   },
   "keywords": [],
   "author": "Damon Ye",
