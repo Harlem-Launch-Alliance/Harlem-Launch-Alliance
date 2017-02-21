@@ -8,11 +8,11 @@ const path = require('path');
 
 app.use(volleyball);
 
-app.use(express.static(__dirname));
-
 app.get('*', function (req, res) {
   res.sendFile(path.resolve(__dirname, 'index.html'));
 });
+
+app.use(express.static(__dirname));
 
 const PORT = process.env.PORT || 1337
 
