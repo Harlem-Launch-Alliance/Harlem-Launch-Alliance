@@ -3,7 +3,7 @@ import React from 'react';
 const Team = () => {
   return (
     <div>
-      <h1>TEAM</h1>
+      <h1>TEAMS</h1>
     </div>
   )
 }
