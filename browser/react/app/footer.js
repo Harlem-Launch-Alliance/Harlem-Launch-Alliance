@@ -17,9 +17,11 @@ const footer = () => {
       }
       links={
         <ul>
-          <li><Link to="/projects" className="grey-text text-lighten-3" href="#!">PROJECTS</Link></li>
-          <li><Link to="/about" className="grey-text text-lighten-3" href="#!">ABOUT</Link></li>
-          <li><Link to="/team" className="grey-text text-lighten-3" href="#!">TEAM</Link></li>
+          <li><Link to="/projects" className="grey-text text-lighten-3">PROJECTS</Link></li>
+          <li><Link to="/about" className="grey-text text-lighten-3">ABOUT</Link></li>
+          <li><Link to="/gallery" className="grey-text text-lighten-3">GALLERY</Link></li>
+          <li><Link to="/team" className="grey-text text-lighten-3">TEAM</Link></li>
+          <li><Link to="/contact" className="grey-text text-lighten-3">CONTACT</Link></li>
         </ul>
       }
     >
