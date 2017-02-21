@@ -13,7 +13,7 @@ const Cover = () => {
         <Col s={4}>
           <Card
             className='small'
-            header={<CardTitle image='http://placehold.it/350x150'>Card Title</CardTitle>}
+            header={<CardTitle image='https://placehold.it/350x150'>Card Title</CardTitle>}
             actions={[<a href='#' key="1" >This is a Link</a>]}>
             This card will have info on PRSG.
           </Card>
@@ -22,7 +22,7 @@ const Cover = () => {
         <Col s={4}>
           <Card
             className='small'
-            header={<CardTitle image='http://placehold.it/350x150'>Card Title</CardTitle>}
+            header={<CardTitle image='https://placehold.it/350x150'>Card Title</CardTitle>}
             actions={[<a href='#' key="1">This is a Link</a>]}>
             This card will have info on ASME
           </Card>
@@ -32,7 +32,7 @@ const Cover = () => {
           <Card
             className='small'
             header={<CardTitle
-            image='http://placehold.it/350x150'>Card Title</CardTitle>}
+            image='https://placehold.it/350x150'>Card Title</CardTitle>}
             actions={[<a href='#' key="1">This is a Link</a>]}>
             This card will have info on AeroSpace Club.
           </Card>
