@@ -5,7 +5,6 @@ import About from './react/app/about';
 import Projects from './react/app/projects';
 import Cover from './react/app/cover';
 import Team from './react/app/team';
-import Sponsors from './react/app/sponsors';
 import Contact from './react/app/contact';
 import Gallery from './react/app/gallery';
 
