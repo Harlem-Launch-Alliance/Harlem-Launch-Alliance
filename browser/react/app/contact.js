@@ -3,7 +3,8 @@ import React from 'react';
 const Contact = () => {
   return (
     <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
-      <h1>CONTACT</h1>
+      <h2>CONTACT</h2>
+      <hr></hr>
       <ul>
         <div>
           <h4>Email : experimental.propulsion@gmail.com</h4>

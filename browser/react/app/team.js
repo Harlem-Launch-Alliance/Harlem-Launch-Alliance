@@ -3,7 +3,8 @@ import React from 'react';
 const Team = () => {
   return (
     <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
-      <h1>TEAM</h1>
+      <h2>TEAM</h2>
+      <hr></hr>
     </div>
   )
 }
