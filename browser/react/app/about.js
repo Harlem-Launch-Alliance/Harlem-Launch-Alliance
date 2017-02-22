@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
+    <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '5%', marginBottom: '5%' }}>
           <div >
             <h2>ABOUT</h2>
             <hr></hr>

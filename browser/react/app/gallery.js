@@ -2,7 +2,7 @@ import React from 'react';
 
 const Gallery = () => {
   return (
-    <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
+    <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '5%', marginBottom: '5%' }}>
       <h2>GALLERY</h2>
       <hr></hr>
       <img className="responsive-img" src="assets/images/BodyManufacturingCompleted.jpg" />

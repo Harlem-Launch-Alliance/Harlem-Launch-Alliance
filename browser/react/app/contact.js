@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
+    <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', marginTop: '5%', marginBottom: '5%' }}>
       <h2>CONTACT</h2>
       <hr></hr>
       <ul>
