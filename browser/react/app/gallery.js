@@ -2,7 +2,7 @@ import React from 'react';
 
 const Gallery = () => {
   return (
-    <div className="section-white">
+    <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
       <h1>Gallery</h1>
       <img className="responsive-img" src="assets/images/BodyManufacturingCompleted.jpg" />
       <img className="responsive-img" src="assets/images/CX-1 Open.jpeg" />

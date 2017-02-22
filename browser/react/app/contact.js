@@ -2,17 +2,17 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="section-white">
+    <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
       <h1>CONTACT</h1>
       <ul>
         <div>
-          <h4>SOME STUFF HERE</h4>
+          <h4>Email : experimental.propulsion@gmail.com</h4>
         </div>
         <div>
-          <h4>SOME STUFF HERE</h4>
+          <h4>Facebook https://www.facebook.com/RocketSciGroup/</h4>
         </div>
         <div>
-          <h4>SOME STUFF HERE</h4>
+          <h4>Youtube LINK HERE</h4>
         </div>
       </ul>
     </div>

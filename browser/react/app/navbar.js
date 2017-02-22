@@ -6,7 +6,7 @@ const NavBar = (props) => {
   return (
     <Navbar
       style={{ backgroundColor: '#39185D' }}
-      brand={<img style={{ height: '100px' }} className="responsive-img" src="assets/images/HLALogo.png" />} right>
+      brand={<img style={{ height: '150px' }} className="responsive-img" src="assets/images/HLALogo.png" />} right>
       <Link to="projects">PROJECTS</Link>
       <Link to="about" >ABOUT</Link>
       <Link to="gallery" >GALLERY</Link>
