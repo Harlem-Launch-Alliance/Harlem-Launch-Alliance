@@ -26,7 +26,7 @@ p
 
 /* start all section */
 #service, #divider, #about, #history, #messenger, #aries, #team, #newsletter,
- #projects, #portfolio, #client, #contact
+ #projects, #gallery, #client, #contact
     {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -397,18 +397,18 @@ p
   }
 /* end projects */
 
-/* start portfolio */
-#portfolio h2
+/* start gallery */
+#gallery h2
     {
         padding-bottom: 30px;
     }
-#portfolio .portfolio-thumb
+#gallery .gallery-thumb
     {
         overflow: hidden;
         margin: 0;
         position: relative;
     }
-#portfolio .portfolio-thumb .portfolio-overlay
+#gallery .gallery-thumb .gallery-overlay
     {
         background: #333;
         color: #ffffff;
@@ -424,12 +424,12 @@ p
         opacity: 0;
         transition: all 0.4s ease-in-out;
     }
-#portfolio .portfolio-thumb:hover .portfolio-overlay
+#gallery .gallery-thumb:hover .gallery-overlay
     {
         opacity: 0.9;
         transform: scale(1.1);
     }
-#portfolio .portfolio-thumb .portfolio-overlay .fa
+#gallery .gallery-thumb .gallery-overlay .fa
     {
         border: 1px solid #ffffff;
         border-radius: 50%;
@@ -496,7 +496,7 @@ p
     display: block;
     height: auto;
 }
-/* end portfolio */
+/* end gallery */
 
 /* start contact */
 #contact
