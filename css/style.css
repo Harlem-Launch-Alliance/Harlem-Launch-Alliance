@@ -26,7 +26,7 @@ p
 
 /* start all section */
 #service, #divider, #about, #history, #messenger, #aries, #team, #newsletter,
- #pricing, #portfolio, #client, #contact
+ #projects, #portfolio, #client, #contact
     {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -322,63 +322,63 @@ p
 }
 /* end newsletter */
 
-/* start pricing */
-#pricing
+/* start projects */
+#projects
     {
         border-bottom: 1px solid #f6f6f6;
     }
-#pricing .col-md-3,
-#pricing .col-sm-6
+#projects .col-md-3,
+#projects .col-sm-6
     {
         padding: 0;
         margin: 0;
     }
-#pricing .plan
+#projects .plan
   {
     border: 1px solid #f6f6f6;
     margin-top: 100px;
     transition: all 0.4s ease-in;
     padding: 40px;
   }
-#pricing .plan_one
+#projects .plan_one
  {
     margin-top: 60px;
  }
-#pricing .plan_two
+#projects .plan_two
  {
     margin-top: 80px;
  }
-#pricing .plan_three
+#projects .plan_three
  {
     margin-top: 40px;
  }
-#pricing .plan_four
+#projects .plan_four
  {
     margin-top: 0px;
  }
-#pricing .plan:hover
+#projects .plan:hover
   {
     background: #202020;
     color: #ffffff;
     transform: scale(1.0);
   }
-#pricing .plan .plan_title
+#projects .plan .plan_title
   {
     border-bottom: 1px solid #f6f6f6;
     color: #9bc848;
     font-size: 30px;
     padding: 20px;
   }
-#pricing .plan ul
+#projects .plan ul
   {
     padding: 0;
   }
-#pricing .plan ul li
+#projects .plan ul li
   {
     display: block;
     padding: 20px 0 20px 0;
   }
-#pricing .plan .btn
+#projects .plan .btn
   {
     background: #39185D;
     border: none;
@@ -390,12 +390,12 @@ p
     margin-bottom: 20px;
     transition: all 0.4s ease-in-out;
   }
-#pricing .plan .btn:hover
+#projects .plan .btn:hover
   {
     background: #FFFFFF;
     color: #66AF33;
   }
-/* end pricing */
+/* end projects */
 
 /* start portfolio */
 #portfolio h2
