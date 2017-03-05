@@ -6,8 +6,6 @@ const App = ({ children }) => {
   return (
     <div>
       <NavBar />
-      { children }
-      <Footer />
     </div>
   )
 }

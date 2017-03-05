@@ -12,13 +12,7 @@ const Routes = () => {
   return (
     <Router history={browserHistory}>
       <Route path="/" component={App}>
-        <IndexRoute component={Cover} />
-        <Route path="about" component={About} />
-        <Route path="projects" component={Projects} />
-        <Route path="contact" component={Contact} />
-        <Route path="team" component={Team} />
-        <Route path="gallery" component={Gallery} />
-        <Route path="*" component={Cover} />
+
       </Route>
     </Router>
   )
