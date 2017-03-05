@@ -25,7 +25,7 @@ p
     }
 
 /* start all section */
-#service, #divider, #about, #history, #team, #newsletter,
+#service, #divider, #about, #history, #messenger, #aries, #team, #newsletter,
  #pricing, #portfolio, #client, #contact
     {
         padding-top: 100px;
@@ -201,79 +201,42 @@ p
     }
 /* end divider */
 
-/* start about */
-#about h3
+/* start about, histor, projects */
+#about h3, #history h3, #messenger h3, #aries h3
     {
         color: #39185D;
         font-size: 40px;
         padding-bottom: 10px;
     }
-#about h4
+#about h4, #history h4, #messenger h4, #aries h4
     {
         padding-bottom: 10px;
     }
-#about .progress
+#about .progress, #history .progress, #messenger .progress, #aries .progress
     {
         border-radius: 4px;
         background: #ffffff;
         height: 6px;
     }
-#about .progress .progress-bar-danger
+#about .progress .progress-bar-danger, #history .progress .progress-bar-danger, #messenger .progress .progress-bar-danger, #aries .progress .progress-bar-danger
     {
         background: #39185D;
     }
-#about .text-top
+#about .text-top, #history .text-top, #messenger .text-top, #history .text-top
     {
         padding-top: 50px;
     }
-#about span
+#about span, #history span, #messenger span, #aries span
     {
         display: block;
         padding-bottom: 10px;
     }
-#about small
+#about small, #history small, #messenger small, #aries small
     {
         font-weight: bold;
         padding-left: 200px;
     }
-/* end about */
-
-/* start history */
-#history h3
-    {
-        color: #39185D;
-        font-size: 40px;
-        padding-bottom: 10px;
-    }
-#history h4
-    {
-        padding-bottom: 10px;
-    }
-#history .progress
-    {
-        border-radius: 4px;
-        background: #ffffff;
-        height: 6px;
-    }
-#history .progress .progress-bar-danger
-    {
-        background: #39185D;
-    }
-#history .text-top
-    {
-        padding-top: 50px;
-    }
-#history span
-    {
-        display: block;
-        padding-bottom: 10px;
-    }
-#history small
-    {
-        font-weight: bold;
-        padding-left: 200px;
-    }
-/* end history */
+/* end about, history, projects */
 
 /* start team */
 #team
