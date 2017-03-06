@@ -4,7 +4,8 @@
     "ignore": [
       "firebase.json",
       "assets",
-      "browser"
+      "browser",
+      "public"
     ]
   }
 }
