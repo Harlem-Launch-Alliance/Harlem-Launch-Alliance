@@ -4,8 +4,7 @@
     "ignore": [
       "firebase.json",
       "assets",
-      "browser",
-      "./.profile"
+      "browser"
     ]
   }
 }
