@@ -3,23 +3,11 @@
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './browser/index.js',
+  entry: ['./js/bootstrap.min.js', './js/custom.js', './js/jquery.flexslider.js', './js/jquery.js', './js/smoothscroll.js', './js/wow.min.js'/*'./js/imagesloaded.min.js', */ ],
   output: {
     path: __dirname,
     filename: './public/bundle.js'
   },
   context: __dirname,
-  devtool: 'source-map',
-  module: {
-    loaders: [
-      {
-        test: /jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel',
-        query: {
-          presets: ['react', 'es2015']
-        }
-      }
-    ]
-  }
+  devtool: 'source-map'
 };
