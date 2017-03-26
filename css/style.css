@@ -26,7 +26,7 @@ p
 
 /* start all section */
 #service, #divider, #about, #history, #messenger, #aries, #team, #newsletter,
- #projects, #gallery, #client, #contact
+ /*#projects,*/ #gallery, #client, #contact
     {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -323,7 +323,7 @@ p
 /* end newsletter */
 
 /* start projects */
-#projects
+/*#projects
     {
         border-bottom: 1px solid #f6f6f6;
     }
@@ -394,7 +394,7 @@ p
   {
     background: #FFFFFF;
     color: #66AF33;
-  }
+  }*/
 /* end projects */
 
 /* start gallery */
