@@ -1,36 +1,36 @@
 
 // google map
-var map = '';
-var center;
+// var map = '';
+// var center;
 
-function initialize() {
-    var mapOptions = {
-      zoom: 16,
-      center: new google.maps.LatLng(40.8200, -73.9493),
-      scrollwheel: false
-    };
+// function initialize() {
+//     var mapOptions = {
+//       zoom: 16,
+//       center: new google.maps.LatLng(40.8200, -73.9493),
+//       scrollwheel: false
+//     };
 
-    map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
+//     map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
 
-    google.maps.event.addDomListener(map, 'idle', function() {
-        calculateCenter();
-    });
+//     google.maps.event.addDomListener(map, 'idle', function() {
+//         calculateCenter();
+//     });
 
-    google.maps.event.addDomListener(window, 'resize', function() {
-        map.setCenter(center);
-    });
-}
+//     google.maps.event.addDomListener(window, 'resize', function() {
+//         map.setCenter(center);
+//     });
+// }
 
-function calculateCenter() {
-  center = map.getCenter();
-}
+// function calculateCenter() {
+//   center = map.getCenter();
+// }
 
-function loadGoogleMap(){
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-    document.body.appendChild(script);
-}
+// function loadGoogleMap(){
+//     var script = document.createElement('script');
+//     script.type = 'text/javascript';
+//     script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
+//     document.body.appendChild(script);
+// }
 
 // Flexslider
 $(function(){
@@ -42,7 +42,7 @@ $(function(){
 
   new WOW().init();
 
-  loadGoogleMap();
+  // loadGoogleMap();
 });
 
 // isotope
@@ -103,7 +103,7 @@ jQuery(document).ready(function($){
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
     $(function() {
-        $('.navbar-default a, a,').bind('click', function(event) {
+        $('.navbar-default a, a').bind('click', function(event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 68
