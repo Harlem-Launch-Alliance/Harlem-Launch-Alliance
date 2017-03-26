@@ -105,8 +105,9 @@ jQuery(document).ready(function($){
     $(function() {
         $('.navbar-default a, a').bind('click', function(event) {
             var $anchor = $(this);
+            var $hrefanchor = $($anchor.attr('href'));
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 68
+                scrollTop: $hrefanchor.offset().top - 68
             }, 1000);
             event.preventDefault();
         });
