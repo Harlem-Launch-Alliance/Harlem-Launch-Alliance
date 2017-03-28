@@ -102,12 +102,14 @@ jQuery(document).ready(function($){
     });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
+
+// change scroll top pixel length down to 65
     $(function() {
         $('.navbar-default a, a').bind('click', function(event) {
             var $anchor = $(this);
             var $hrefanchor = $($anchor.attr('href'));
             $('html, body').stop().animate({
-                scrollTop: $hrefanchor.offset().top - 68
+                scrollTop: $hrefanchor.offset().top - 65
             }, 1000);
             event.preventDefault();
         });
