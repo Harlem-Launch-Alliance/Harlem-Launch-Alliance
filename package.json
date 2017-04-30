@@ -1,13 +1,39 @@
 {
   "name": "HLA",
   "version": "1.0.0",
-  "description": "",
+  "description": "The Harlem Launch Alliance (HLA) is a registered 501c3 nonprofit corporation headquartered in the Grove School of Engineering at the City College of New York. The purpose of the HLA is to “support amateur experimental aerospace research” at CCNY and in Harlem in general (we share our Harlem neighborhood with Columbia University and their Columbia Space Initiative group). That research is primarily directed at experimental rocketry, most notably hybrid rocketry, but also includes composite materials manufacturing and novel new recovery system schemes. The HLA makes use of all different kinds of people with all kinds of different skills. If you're inspired by our work, and would like to know how it may be possible to contribute to our effort, know that you do not need to be an engineer or scientist! Hit us up on Facebook at @hla.nyc or sign up for our newsletter and tell us a little about yourself!",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack"
   },
-  "keywords": [],
+  "keywords": [
+    "ccny",
+    "ccny rocket",
+    "ccny rocketry",
+    "city college rocket",
+    "city college rocketry,"
+    "nyc rocket",
+    "nyc rocketry",
+    "hla",
+    "harlem rocket",
+    "harlem rocketry",
+    "harlem launch alliance",
+    "new York city rocket",
+    "new York city rocketry",
+    "ccny aerospace",
+    "city college aerospace",
+    "harlem aerospace",
+    "project messenger",
+    "project aries",
+    "hybrid rocket nyc",
+    "hybrid rocketry",
+    "hybrid rocket ccny",
+    "hybrid rocket harlem",
+    "harlem hybrid rocket",
+    "hybrid rocketry nyc",
+    "paraffin hybrid rocket harlem",
+    "paraffin hybrid rocket ccny"
+  ],
   "author": "Damon Ye",
   "license": "ISC",
   "devDependencies": {
