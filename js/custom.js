@@ -1,37 +1,3 @@
-
-// google map
-// var map = '';
-// var center;
-
-// function initialize() {
-//     var mapOptions = {
-//       zoom: 16,
-//       center: new google.maps.LatLng(40.8200, -73.9493),
-//       scrollwheel: false
-//     };
-
-//     map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
-
-//     google.maps.event.addDomListener(map, 'idle', function() {
-//         calculateCenter();
-//     });
-
-//     google.maps.event.addDomListener(window, 'resize', function() {
-//         map.setCenter(center);
-//     });
-// }
-
-// function calculateCenter() {
-//   center = map.getCenter();
-// }
-
-// function loadGoogleMap(){
-//     var script = document.createElement('script');
-//     script.type = 'text/javascript';
-//     script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-//     document.body.appendChild(script);
-// }
-
 // Flexslider
 $(function(){
   /* FlexSlider */
@@ -41,8 +7,6 @@ $(function(){
   });
 
   new WOW().init();
-
-  // loadGoogleMap();
 });
 
 // isotope
@@ -97,20 +61,20 @@ jQuery(document).ready(function($){
 });
 
 // Hide mobile menu after clicking on a link
-    $('.navbar-collapse a').click(function(){
-        $(".navbar-collapse").collapse('hide');
-    });
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 
 // change scroll top pixel length down to 65
-    $(function() {
-        $('.navbar-default a, a').bind('click', function(event) {
-            var $anchor = $(this);
-            var $hrefanchor = $($anchor.attr('href'));
-            $('html, body').stop().animate({
-                scrollTop: $hrefanchor.offset().top - 65
-            }, 1000);
-            event.preventDefault();
-        });
+$(function() {
+    $('.navbar-default a, a').bind('click', function(event) {
+        var $anchor = $(this);
+        var $hrefanchor = $($anchor.attr('href'));
+        $('html, body').stop().animate({
+            scrollTop: $hrefanchor.offset().top - 65
+        }, 1000);
+        event.preventDefault();
     });
+});
