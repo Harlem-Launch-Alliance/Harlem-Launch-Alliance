@@ -11,7 +11,7 @@
     "ccny rocket",
     "ccny rocketry",
     "city college rocket",
-    "city college rocketry,"
+    "city college rocketry",
     "nyc rocket",
     "nyc rocketry",
     "hla",
@@ -35,9 +35,8 @@
     "paraffin hybrid rocket ccny"
   ],
   "author": "Damon Ye",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "volleyball": "^1.4.1",
     "webpack": "^1.14.0"
   }
 }
