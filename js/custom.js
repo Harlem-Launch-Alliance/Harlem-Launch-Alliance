@@ -7,8 +7,6 @@ $(function(){
   });
 
   new WOW().init();
-
-  // loadGoogleMap();
 });
 
 // isotope
