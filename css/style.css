@@ -237,6 +237,11 @@ p
         font-weight: bold;
         padding-left: 200px;
     }
+#about img
+    {
+        display: block;
+        margin: auto;
+    }
 /* end about, history, projects */
 
 /* start team */
